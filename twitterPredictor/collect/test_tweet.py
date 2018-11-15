@@ -13,6 +13,7 @@ def twitter_setup():
     auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
     # Return API with authentication:
+    #Tweet pour s'assurer que ça marche
     api = tweepy.API(auth)
     status="testing"
     api.update_status(status=status)
